@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+<<<<<<< HEAD
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
@@ -24,3 +25,7 @@ jobs:
           context: .
           push: true
           tags: mammu0292/my-python-app:latest
+=======
+      - name: Build Docker image
+        run: docker build -t my-python-app .
+>>>>>>> 29d4a0f916601c1711673ccf7fa0eb665491b37e
